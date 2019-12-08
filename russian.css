@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Reisenberg';
+    src: url('./Reisenberg20-ExP9.ttf') format('truetype');
+}
+
+#RuLearning {
+    font-size: 150px;
+    text-align: center;
+    font-family: 'Stalinist One', cursive;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    line-height: 0.55;
+}
+
+#frst-btn {
+    margin: 30px 30px;
+    margin-top: 30px; 
+    padding: 30px 30px;
+    color: red;
+}
+
+#free-rus-les {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;  
+    padding-right: 30px;
+}
+
+#free-rus-les p {
+    text-align: center;
+}
+
+#featured-logos {
+    display: flex;
+}
+
+#featured-logos img {
+    max-width: 100%;
+    height: auto;
+}
