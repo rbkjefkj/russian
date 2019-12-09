@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'Reisenberg';
-    src: url('./Reisenberg20-ExP9.ttf') format('truetype');
-}
 
 #RuLearning {
     font-size: 150px;
@@ -34,9 +30,11 @@
 
 #featured-logos {
     display: flex;
+   	align-items: center; /*WO THIS, PICTURES VERTICALLY STRETCHED COS THIS IS STRETCH BY DEFAULT*/
+   	justify-content: center; /*justify-CONTENT & align-ITEMS*/
 }
 
-#featured-logos img {
-    max-width: 100%;
-    height: auto;
+#about {
+	margin: 0 100px;
+	text-align: justify;
 }
