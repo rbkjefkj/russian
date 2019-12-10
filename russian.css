@@ -1,4 +1,3 @@
-
 #RuLearning {
     font-size: 150px;
     text-align: center;
@@ -38,3 +37,14 @@
 	margin: 0 100px;
 	text-align: justify;
 }
+
+footer {
+    background-color: dodgerblue;
+    height: 80px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.row { margin: 0; }
