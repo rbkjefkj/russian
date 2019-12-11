@@ -1,5 +1,7 @@
+html { font-size: 100%; } /*which browsers don't have this as 16px by default?*/
+
 #RuLearning {
-    font-size: 150px;
+    font-size: 10vw;
     text-align: center;
     font-family: 'Stalinist One', cursive;
     padding: 0;
@@ -8,11 +10,25 @@
     line-height: 0.55;
 }
 
+button .btn .btn-default {
+    background-color: orange;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
 #frst-btn {
     margin: 30px 30px;
     margin-top: 30px; 
     padding: 30px 30px;
-    color: red;
+    color: #E30909;
+    background-color: gold;
+    font-weight: bold;
+}
+
+#scnd-btn, #thrd-btn, #last-btn {
+    color: white;
+    background-color: orange;
+    font-weight: bold; 
 }
 
 #free-rus-les {
@@ -35,16 +51,27 @@
 
 #about {
 	margin: 0 100px;
-	text-align: justify;
+	text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
+#last-btn { margin: 2rem 0 2.5rem 0; }
+
 footer {
-    background-color: dodgerblue;
+    background-color: #0000FF;
     height: 80px;
+    line-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
+    color: white;
+    opacity: 0.8;
     text-align: center;
+    justify-self: center;
+    margin: 0;
 }
 
 .row { margin: 0; }
