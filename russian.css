@@ -1,4 +1,4 @@
-html { font-size: 100%; } /*which browsers don't have this as 16px by default?*/
+html { font-size: 100%; background-color: yellow; } /*which browsers don't have this as 16px by default?*/
 
 #RuLearning {
     font-size: 10vw;
@@ -6,7 +6,7 @@ html { font-size: 100%; } /*which browsers don't have this as 16px by default?*/
     font-family: 'Stalinist One', cursive;
     padding: 0;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 40px;
     line-height: 0.55;
 }
 
@@ -17,22 +17,27 @@ button .btn .btn-default {
 }
 
 #frst-btn {
-    margin: 30px 30px;
-    margin-top: 30px; 
-    padding: 30px 30px;
+    margin-top: 30px;
+    padding: 20px 30px;
     color: #E30909;
     background-color: gold;
     font-weight: bold;
 }
 
+#three-btns #scnd-btn { background-color: #ffbe00 }
+
+/*#three-btns { display: flex; flex-direction: column; width: 1000px;}*/
+
 #scnd-btn, #thrd-btn, #last-btn {
+    margin-top: 5px;
+    padding: 20px 30px;
     color: white;
     background-color: orange;
     font-weight: bold; 
 }
 
 #free-rus-les {
-    width: 50%;
+    width: 33.33333%;
     display: flex;
     flex-direction: column;
     padding-left: 30px;  
