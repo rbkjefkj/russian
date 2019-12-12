@@ -1,4 +1,4 @@
-html { font-size: 100%; background-color: yellow; } /*which browsers don't have this as 16px by default?*/
+html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't have this as 16px by default?*/
 
 #RuLearning {
     font-size: 10vw;
@@ -19,21 +19,23 @@ button .btn .btn-default {
 #frst-btn {
     margin-top: 30px;
     padding: 20px 30px;
+    font-size: 2rem;
     color: #E30909;
     background-color: gold;
-    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
 }
 
 #three-btns #scnd-btn { background-color: #ffbe00 }
 
-/*#three-btns { display: flex; flex-direction: column; width: 1000px;}*/
+#three-btns { display: flex; flex-direction: column; justify-content: center; margin-right: 200px !important; margin-left: 200px !important;}
 
 #scnd-btn, #thrd-btn, #last-btn {
     margin-top: 5px;
     padding: 20px 30px;
     color: white;
+    font-size: 1.5rem;
+    font-family: 'Permanent Marker', cursive;
     background-color: orange;
-    font-weight: bold; 
 }
 
 #free-rus-les {
@@ -50,14 +52,23 @@ button .btn .btn-default {
 
 #featured-logos {
     display: flex;
-   	align-items: center; /*WO THIS, PICTURES VERTICALLY STRETCHED COS THIS IS STRETCH BY DEFAULT*/
-   	justify-content: center; /*justify-CONTENT & align-ITEMS*/
+    align-items: center; /*WO THIS, PICTURES VERTICALLY STRETCHED COS THIS IS STRETCH BY DEFAULT*/
+    justify-content: center; /*justify-CONTENT & align-ITEMS*/
 }
 
+#easyNfun { font-family: 'Roboto', sans-serif; }
+
 #about {
-	margin: 0 100px;
-	text-align: left;
+    margin: 0 100px;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
+}
+
+#adrianus {
+    margin-left: 100px;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
 }
 
 #last-btn { margin: 2rem 0 2.5rem 0; }
