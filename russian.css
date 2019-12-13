@@ -6,7 +6,6 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
     font-family: 'Stalinist One', cursive;
     padding: 0;
     margin: 0;
-    margin-top: 40px;
     line-height: 0.55;
 }
 
@@ -27,7 +26,13 @@ button .btn .btn-default {
 
 #three-btns #scnd-btn { background-color: #ffbe00 }
 
-#three-btns { display: flex; flex-direction: column; justify-content: center; margin-right: 200px !important; margin-left: 200px !important;}
+#three-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 200px !important;
+    margin-left: 200px !important;
+}
 
 #scnd-btn, #thrd-btn, #last-btn {
     margin-top: 5px;
@@ -54,6 +59,27 @@ button .btn .btn-default {
     display: flex;
     align-items: center; /*WO THIS, PICTURES VERTICALLY STRETCHED COS THIS IS STRETCH BY DEFAULT*/
     justify-content: center; /*justify-CONTENT & align-ITEMS*/
+    margin: auto 0 0 0 !important;
+}
+
+#featured-logos h2 {
+    opacity: 0.5;
+    font-size: .75rem;
+    align-self: flex-end;
+    padding-bottom: 20px;
+}
+
+#featured-logos img {
+    height: 10vh;
+}
+
+#frst-slide {
+    height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 #easyNfun { font-family: 'Roboto', sans-serif; }
