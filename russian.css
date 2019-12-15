@@ -2,6 +2,14 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
 
 .buttons:hover { background-color: #1A5EFF!important; color: white !important; } 
 
+@media(max-width: 916px) {
+    #three-btns #frst-btn { font-size: 3vw; }
+}
+
+@media(max-width: 800px) {
+    .buttons { font-size: 3.4vw !important; }
+}
+
 #RuLearning {
     font-size: 9.5vw;
     text-align: center;
@@ -28,6 +36,7 @@ button .btn .btn-default {
 }
 
 #frst-btn {
+    white-space: nowrap;
     padding: 20px 30px;
     font-size: 1.75rem;
     color: #E30909;
