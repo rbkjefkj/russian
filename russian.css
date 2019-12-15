@@ -1,15 +1,15 @@
 html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't have this as 16px by default?*/
 
-.buttons:hover { background-color: #33bbff!important; color: white !important; } 
+.buttons:hover { background-color: #1A5EFF!important; color: white !important; } 
 
 #RuLearning {
-    font-size: 10vw;
+    font-size: 9.5vw;
     text-align: center;
     font-family: 'Stalinist One', cursive;
     padding: 0;
     margin: 0;
     line-height: 0.55;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 button .btn .btn-default {
@@ -19,7 +19,7 @@ button .btn .btn-default {
 }
 
 #yellow-bg {
-    padding: 20px;
+    padding: 15px 20px 20px 20px;
     background-color: #ffff99;
     z-index: 1;
     margin-left: auto;
@@ -29,7 +29,7 @@ button .btn .btn-default {
 
 #frst-btn {
     padding: 20px 30px;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #E30909;
     background-color: gold;
     font-family: 'Permanent Marker', cursive;
@@ -84,7 +84,7 @@ button .btn .btn-default {
 }
 
 #featured-logos img {
-    height: 10vh;
+    height: 9vh;
 }
 
 #frst-slide {
@@ -96,26 +96,70 @@ button .btn .btn-default {
     flex-direction: column;
 }
 
-#easyNfun { font-family: 'Roboto', sans-serif; }
+#easyNfun {
+    font-family: 'Permanent Marker', cursive;
+    margin: 1rem 0 !important;
+    font-size: 2.2rem;
+}
 
-#about {
-    margin: 0 100px;
+#long-text {
+    /*margin: 0 100px;*/
     text-align: left;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+}
+    
+#byline-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+#byline-p {
+    margin: 0 0 5px 10px;
+    opacity: .5;
 }
 
 #adrianus {
-    margin-left: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
     width: 90px;
     height: 90px;
     display: inline-block;
 }
 
-#last-btn { margin: 2rem 0 2.5rem 0; }
+#last-btn {
+    margin: 2rem 0 2.5rem 0;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+/*#last-btn:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 5px;
+   left: 5px;
+   right: 5px;
+   bottom: 5px;
+   border: 5px solid #cc00ff;
+}
+
+#last-btn:after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 15px;
+   left: 15px;
+   right: 15px;
+   bottom: 15px;
+   border: 5px solid #00b4ff;
+   background: #fff;
+}*/
 
 footer {
-    background-color: #0000FF;
-    height: 80px;
     line-height: 80px;
     display: flex;
     flex-direction: column;
@@ -123,8 +167,9 @@ footer {
 }
 
 footer p {
-    color: white;
-    opacity: 0.8;
+    color: black;
+    opacity: .4;
+    font-size: .9rem;
     text-align: center;
     justify-self: center;
     margin: 0;
