@@ -10,6 +10,9 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
     .buttons { font-size: 3.4vw !important; }
 }
 
+@media(max-width: 1300px) { #frst-slide #RuLearning { font-size: 10.6vw;  }}
+@media(max-width: 550px) { #frst-slide #RuLearning { margin-bottom: 10px; line-height: .7; }}
+
 #RuLearning {
     font-size: 9.5vw;
     text-align: center;
