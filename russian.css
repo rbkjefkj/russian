@@ -20,7 +20,7 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
     padding: 0;
     margin: 0;
     line-height: 0.55;
-    margin-bottom: 28px;
+    margin-bottom: calc(15px + 1.3%); /*15px in Chrome and 10px in Brave >:(*/
 }
 
 button .btn .btn-default {
@@ -36,6 +36,7 @@ button .btn .btn-default {
     margin-left: auto;
     margin-right: auto;
     border-radius: .5rem;
+    margin-bottom: 10px;
 }
 
 #frst-btn {
@@ -85,24 +86,46 @@ button .btn .btn-default {
     display: flex;
     align-items: center; /*WO THIS, PICTURES VERTICALLY STRETCHED COS THIS IS STRETCH BY DEFAULT*/
     justify-content: center; /*justify-CONTENT & align-ITEMS*/
-    margin: auto 0 0 0 !important;
+    margin: 1.5% 0 0 0 !important; /*first must be 1.5% in Chrome and auto in Brave*/
 }
 
-#featured-logos h2 {
-    opacity: 0.5;
+#featured-logos #wide-visible {
+    opacity: .5;
     font-size: .75rem;
     align-self: flex-end;
     padding-bottom: 20px;
+    display: block;
+}
+
+#narrow-visible {
+    width: 90%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+   display: none;
+   font-size: 1rem;
+   opacity: .5;
+}
+
+#narrow-visible span {
+    background:#fff; 
+    padding:0 10px; 
+}
+
+@media(max-width: 745px) {
+    #featured-logos #wide-visible { display: none; }
+    #narrow-visible { display: block; }
 }
 
 #featured-logos img {
-    height: 9vh;
+    height: 11vh; /*11vh on Chrome, 9vh on Brave U_U*/
 }
 
 #frst-slide {
     height: 100vh;
     box-sizing: border-box;
-    padding-bottom: 25px;
+    padding-bottom: 5vh;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -158,7 +181,6 @@ button .btn .btn-default {
    bottom: 5px;
    border: 5px solid #cc00ff;
 }
-
 #last-btn:after {
    content: "";
    position: absolute;

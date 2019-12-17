@@ -27,7 +27,9 @@
     </div>  
     
     <div id="featured-logos" class="row" style="margin: 0;">
-        <h2>FEATURED IN:</h2>
+        <h2 id="wide-visible">FEATURED IN:</h2>
+        <h2 id="narrow-visible"><span><em>featured in</em></span></h2>
+
         <img src="https://learntherussianlanguage.com/wp-content/uploads/2019/01/fluentu-logo.png">
         <img src="https://learntherussianlanguage.com/wp-content/uploads/2019/01/glossika-logo.png">
         <img src="https://i1.wp.com/learntherussianlanguage.com/wp-content/uploads/2019/11/fi3m.jpg?w=180&ssl=1">
@@ -86,7 +88,6 @@ And that's just the beginning!<br><br>
 window.onresize = function(event) {
     getText(event);    
 };
-
 function getText() {
     let w = window.innerWidth;
     w > 800 ? document.getElementById('frst-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN IN 365 DAYS' : document.getElementById('frst-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN';
