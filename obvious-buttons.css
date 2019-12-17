@@ -1,0 +1,214 @@
+/**
+ * Obvious Buttons 0.1
+ * https://github.com/skidding/obvious-buttons
+ *
+ * (c) 2014+ Ovidiu Cherecheș
+ * http://skidding.mit-license.org
+ */
+.btnn {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  /*height: 40px;*/ /*this is wacking my button size*/
+  padding: 0 14px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  line-height: 37px;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-property: background-color;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -ms-transition-property: background-color;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-timing-function: linear;
+  -o-transition-property: background-color;
+  -o-transition-duration: 0.2s;
+  -o-transition-timing-function: linear;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  background: #fafafa;
+  color: #222222;
+}
+.btnn i {
+  line-height: 37px;
+}
+.btnn:active,
+.btnn:active i {
+  line-height: 40px;
+}
+.btnn.btnn-primary,
+.btnn.btnn-info,
+.btnn.btnn-success,
+.btnn.btnn-warning,
+.btnn.btnn-danger,
+.btnn.btnn-inverse {
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+}
+.btnn:hover,
+.btnn:focus {
+  background: #e6e6e6;
+  color: #222222;
+}
+.btnn.btnn-primary {
+  background: #0088cc;
+  color: #fafafa;
+}
+.btnn.btnn-primary:hover,
+.btnn.btnn-primary:focus {
+  background: #006da3;
+  color: #fafafa;
+}
+.btnn.btnn-info {
+  background: #49afcd;
+  color: #fafafa;
+}
+.btnn.btnn-info:hover,
+.btnn.btnn-info:focus {
+  background: #339bba;
+  color: #fafafa;
+}
+.btnn.btnn-success {
+  background: #5bb75b;
+  color: #fafafa;
+}
+.btnn.btnn-success:hover,
+.btnn.btnn-success:focus {
+  background: #47a247;
+  color: #fafafa;
+}
+.btnn.btnn-warning {
+  background: #faa732;
+  color: #fafafa;
+}
+.btnn.btnn-warning:hover,
+.btnn.btnn-warning:focus {
+  background: #f9960a;
+  color: #fafafa;
+}
+.btnn.btnn-danger {
+  background: #da4f49;
+  color: #fafafa;
+}
+.btnn.btnn-danger:hover,
+.btnn.btnn-danger:focus {
+  background: #d0312a;
+  color: #fafafa;
+}
+.btnn.btnn-inverse {
+  background: #363636;
+  color: #fafafa;
+}
+.btnn.btnn-inverse:hover,
+.btnn.btnn-inverse:focus {
+  background: #222222;
+  color: #fafafa;
+}
+.btnn span {
+  pointer-events: none;
+}
+.btnn:hover {
+  text-decoration: none;
+}
+.btnn:focus {
+  text-decoration: none;
+  outline: none;
+}
+.btnn:active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.btnn-small {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  line-height: 28px;
+}
+.btnn-small i {
+  line-height: 28px;
+}
+.btnn-small:active,
+.btnn-small:active i {
+  line-height: 30px;
+}
+.btnn-small.btnn-primary,
+.btnn-small.btnn-info,
+.btnn-small.btnn-success,
+.btnn-small.btnn-warning,
+.btnn-small.btnn-danger,
+.btnn-small.btnn-inverse {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+}
+.btnn-large {
+  height: 50px;
+  padding: 0 18px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
+  font-size: 22px;
+  line-height: 46px;
+}
+.btnn-large i {
+  line-height: 46px;
+}
+.btnn-large:active,
+.btnn-large:active i {
+  line-height: 50px;
+}
+.btnn-large.btnn-primary,
+.btnn-large.btnn-info,
+.btnn-large.btnn-success,
+.btnn-large.btnn-warning,
+.btnn-large.btnn-danger,
+.btnn-large.btnn-inverse {
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+}
+.btnn-xlarge {
+  /*height: 60px;*/
+  padding: 0 22px;
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.15);
+  /*font-size: 26px;
+  line-height: 55px;*/
+}
+.btnn-xlarge i {
+  line-height: 55px;
+}
+.btnn-xlarge:active,
+.btnn-xlarge:active i {
+  line-height: 60px;
+}
+.btnn-xlarge.btnn-primary,
+.btnn-xlarge.btnn-info,
+.btnn-xlarge.btnn-success,
+.btnn-xlarge.btnn-warning,
+.btnn-xlarge.btnn-danger,
+.btnn-xlarge.btnn-inverse {
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+}
+.btnn-inline {
+  display: inline-block;
+  vertical-align: middle;
+}

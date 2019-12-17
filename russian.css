@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Adine';
+    src: url('./adine.ttf') format('truetype');
+}
+
 html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't have this as 16px by default?*/
 
 .buttons:hover { background-color: #1A5EFF!important; color: white !important; } 
@@ -12,6 +17,8 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
 
 @media(max-width: 1300px) { #frst-slide #RuLearning { font-size: 10.6vw;  }}
 @media(max-width: 550px) { #frst-slide #RuLearning { margin-bottom: 10px; line-height: .7; }}
+
+/*on mobile size, uncheck section height and make logo images be max-width: 100%;*/
 
 #RuLearning {
     font-size: 9.5vw;
@@ -100,7 +107,7 @@ button .btn .btn-default {
 #narrow-visible {
     width: 90%; 
    text-align: center; 
-   border-bottom: 1px solid #000; 
+   border-bottom: 1px solid grey; 
    line-height: 0.1em;
    margin: 10px 0 20px; 
    display: none;
@@ -111,6 +118,8 @@ button .btn .btn-default {
 #narrow-visible span {
     background:#fff; 
     padding:0 10px; 
+    font-family: 'Adine';
+    font-size: 3rem;
 }
 
 @media(max-width: 745px) {
@@ -123,13 +132,23 @@ button .btn .btn-default {
 }
 
 #frst-slide {
-    height: 100vh;
+    height: 100vh; /*this must be unchecked when reaching mobile sizes otherwise video might cover logos*/
     box-sizing: border-box;
     padding-bottom: 5vh;
     padding-top: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
+
+/*#grey-bg {
+    padding: 15px 20px 20px 20px;
+    background-color: grey;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .5rem;
+    margin-bottom: 10px;
+}*/
 
 #easyNfun {
     font-family: 'Permanent Marker', cursive;
@@ -170,28 +189,6 @@ button .btn .btn-default {
     z-index: 1;
     padding: 30px;
 }
-
-/*#last-btn:before {
-   content: "";
-   position: absolute;
-   z-index: -1;
-   top: 5px;
-   left: 5px;
-   right: 5px;
-   bottom: 5px;
-   border: 5px solid #cc00ff;
-}
-#last-btn:after {
-   content: "";
-   position: absolute;
-   z-index: -1;
-   top: 15px;
-   left: 15px;
-   right: 15px;
-   bottom: 15px;
-   border: 5px solid #00b4ff;
-   background: #fff;
-}*/
 
 footer {
     line-height: 80px;
