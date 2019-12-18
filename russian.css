@@ -1,4 +1,3 @@
-  
 @font-face {
     font-family: 'Adine';
     src: url('./adine.ttf') format('truetype');
@@ -22,7 +21,14 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
 }
 
 @media(max-width: 1300px) { #frst-slide #RuLearning { font-size: 10.6vw;  }}
-@media(max-width: 550px) { #frst-slide #RuLearning { margin-bottom: 10px; line-height: .7; }}
+
+@media(max-width: 550px) {
+    #frst-slide #RuLearning {
+        margin-bottom: 10px;
+        line-height: .7;
+    }
+    iframe { width: 500px; height: 281.25px; }
+}
 
 /*on mobile size, uncheck section height and make logo images be max-width: 100%;*/
 
@@ -124,13 +130,18 @@ button .btn .btn-default {
 #narrow-visible span {
     background:#fff; 
     padding:0 10px; 
-    font-family: 'Aramis';
+    font-family: 'Adine';
     font-size: 1.5rem;
 }
 
 @media(max-width: 745px) {
     #featured-logos #wide-visible { display: none; }
     #narrow-visible { display: block; }
+    #vid-container { border-top: 1px solid grey; }
+    #for-whitespace #easyNfun {
+        padding-top: 0;
+        margin: .1rem 0 1rem 0 !important;
+    }
 }
 
 #featured-logos img {
@@ -149,10 +160,6 @@ button .btn .btn-default {
     display: flex;
     flex-direction: column;
     padding: 0 5%;
-}
-
-#vid-container{
-    border-top: 1px solid grey;
 }
 
 iframe {
