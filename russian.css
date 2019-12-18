@@ -1,6 +1,12 @@
+  
 @font-face {
     font-family: 'Adine';
     src: url('./adine.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Aramis";
+    src: url('./aramisi.ttf') format('truetype');
 }
 
 html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't have this as 16px by default?*/
@@ -27,7 +33,7 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
     padding: 0;
     margin: 0;
     line-height: 0.55;
-    margin-bottom: calc(15px + 1.3%); /*15px in Chrome and 10px in Brave >:(*/
+    margin-bottom: calc(10px + 1.3%); /*15px in Chrome and 10px in Brave >:(*/
 }
 
 button .btn .btn-default {
@@ -118,8 +124,8 @@ button .btn .btn-default {
 #narrow-visible span {
     background:#fff; 
     padding:0 10px; 
-    font-family: 'Adine';
-    font-size: 3rem;
+    font-family: 'Aramis';
+    font-size: 1.5rem;
 }
 
 @media(max-width: 745px) {
@@ -132,28 +138,36 @@ button .btn .btn-default {
 }
 
 #frst-slide {
-    height: 100vh; /*this must be unchecked when reaching mobile sizes otherwise video might cover logos*/
     box-sizing: border-box;
-    padding-bottom: 5vh;
+    padding-bottom: 36px;
     padding-top: 40px;
     display: flex;
     flex-direction: column;  
 }
 
-/*#grey-bg {
-    padding: 15px 20px 20px 20px;
-    background-color: grey;
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: .5rem;
-    margin-bottom: 10px;
-}*/
+#for-whitespace {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+#vid-container{
+    border-top: 1px solid grey;
+}
+
+iframe {
+    /*padding: 20px;
+    border-radius: 3px;*/
+    margin: 2rem 0;
+    z-index: 2;
+}
 
 #easyNfun {
     font-family: 'Permanent Marker', cursive;
     margin: 1rem 0 !important;
     font-size: 2.2rem;
+    padding-top: 30px;
+    text-align: center;
 }
 
 #long-text {
@@ -166,11 +180,17 @@ button .btn .btn-default {
 #byline-container {
     display: flex;
     align-items: flex-end;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+    width: 100%;
 }
 
 #byline-p {
     margin: 0 0 5px 10px;
-    opacity: .5;
+    opacity: .8;
+    font-family: 'Aramis';
+    font-size: 22px;
+
 }
 
 #adrianus {
