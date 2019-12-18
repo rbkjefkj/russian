@@ -131,17 +131,20 @@ button .btn .btn-default {
     background:#fff; 
     padding:0 10px; 
     font-family: 'Adine';
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
+@media(max-width: 1150px) { .col-sm-10 #long-text { font-size: 1rem; } }
+
 @media(max-width: 745px) {
+
     #featured-logos #wide-visible { display: none; }
+
     #narrow-visible { display: block; }
+
     #vid-container { border-top: 1px solid grey; }
-    #for-whitespace #easyNfun {
-        padding-top: 0;
-        margin: .1rem 0 1rem 0 !important;
-    }
+
+    body #frst-slide { padding-bottom: 27px; }
 }
 
 #featured-logos img {
@@ -169,13 +172,33 @@ iframe {
     z-index: 2;
 }
 
+@media(min-width: 426px) {
+    #for-whitespace #easyNfun {
+        font-size: 2rem;
+        padding-top: 0;
+        margin: .1rem 0 1rem 0 !important;
+    }
+}
+
+@media(min-width: 746px) {
+    #for-whitespace #easyNfun {
+        font-size: 2.2rem;
+        padding-top: 25px;
+        margin: 1rem 0 !important;
+    } 
+}
+
+
 #easyNfun {
     font-family: 'Permanent Marker', cursive;
-    margin: 1rem 0 !important;
-    font-size: 2.2rem;
-    padding-top: 30px;
+    /*margin: 1rem 0 !important;*/
+    font-size: 1.3rem;
+    padding-top: 0;
     text-align: center;
+    margin-bottom: 1rem;
 }
+
+
 
 #long-text {
     /*margin: 0 100px;*/
@@ -194,10 +217,7 @@ iframe {
 
 #byline-p {
     margin: 0 0 5px 10px;
-    opacity: .8;
-    font-family: 'Aramis';
-    font-size: 22px;
-
+    opacity: .4;
 }
 
 #adrianus {
