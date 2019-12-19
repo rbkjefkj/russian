@@ -28,6 +28,8 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
         line-height: .7;
     }
     iframe { width: 500px; height: 281.25px; }
+    #last-btn-container #last-btn { padding: 20px; font-size: 1.1rem; }
+    footer #copyright { white-space: nowrap; font-size: .7rem; }
 }
 
 /*on mobile size, uncheck section height and make logo images be max-width: 100%;*/
@@ -137,14 +139,11 @@ button .btn .btn-default {
 @media(max-width: 1150px) { .col-sm-10 #long-text { font-size: 1rem; } }
 
 @media(max-width: 745px) {
-
     #featured-logos #wide-visible { display: none; }
-
     #narrow-visible { display: block; }
-
     #vid-container { border-top: 1px solid grey; }
-
     body #frst-slide { padding-bottom: 27px; }
+    #last-btn-container #last-btn { margin: 1.4rem 0 1.5rem 0; }
 }
 
 #featured-logos img {
@@ -229,7 +228,7 @@ iframe {
 }
 
 #last-btn {
-    margin: 2rem 0 2.5rem 0;
+    margin: 2.2rem 0 2.7rem 0;
     font-size: 2rem;
     font-family: 'Permanent Marker', cursive;
     position: relative;
