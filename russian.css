@@ -28,7 +28,7 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
         line-height: .7;
     }
     iframe { width: 500px; height: 281.25px; }
-    #last-btn-container #last-btn { padding: 20px; font-size: 1.1rem; }
+    #last-btn-container #last-btn { padding: 20px; font-size: 1.2rem; }
     footer #copyright { white-space: nowrap; font-size: .7rem; }
 }
 
@@ -228,12 +228,25 @@ iframe {
 }
 
 #last-btn {
-    margin: 2.2rem 0 2.7rem 0;
-    font-size: 2rem;
+  /*font-size: 2rem;
+    padding: 30px;*/
+    padding: 20px 30px;
+    font-size: 1.7rem;
     font-family: 'Permanent Marker', cursive;
     position: relative;
     z-index: 1;
-    padding: 30px;
+    margin: 2.2rem 0 2.7rem 0;
+    background-color: red;
+    color: yellow;
+}
+
+@media(max-width: 400px) {
+    #last-btn #br { display: block !important; }
+    #last-btn-container #last-btn {
+        padding: 15px;
+        font-size: 1rem !important;      
+        width: 90%;  
+    }
 }
 
 footer {
