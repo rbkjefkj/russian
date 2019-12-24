@@ -12,6 +12,12 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
 
 .buttons:hover { background-color: #1A5EFF!important; color: white !important; } 
 
+@media(min-width: 1600px) {
+    #RuLearning { font-size: 6.3vw !important; }
+    #featured-logos img { height: 8vh !important; }
+    html body { background-color: lavender; }
+}
+
 @media(max-width: 916px) {
     #three-btns #frst-btn { font-size: 3vw; }
 }
@@ -23,6 +29,7 @@ html { font-size: 100%; /*background-color: yellow;*/ } /*which browsers don't h
 @media(max-width: 1300px) { #frst-slide #RuLearning { font-size: 10.6vw;  }}
 
 @media(max-width: 550px) {
+    body #frst-slide { padding-top: 20px; }
     #frst-slide #RuLearning {
         margin-bottom: 10px;
         line-height: .7;
@@ -51,7 +58,7 @@ button .btn .btn-default {
 }
 
 #yellow-bg {
-    padding: 15px 20px 20px 20px;
+    padding: 1.2% 1.4% 1.4% 1.4%;
     background-color: #ffff99;
     z-index: 1;
     margin-left: auto;
@@ -138,7 +145,7 @@ button .btn .btn-default {
 
 @media(max-width: 1150px) { .col-sm-10 #long-text { font-size: 1rem; } }
 
-@media(max-width: 745px) {
+@media(max-width: 770px) {
     #featured-logos #wide-visible { display: none; }
     #narrow-visible { display: block; }
     #vid-container { border-top: 1px solid grey; }
@@ -147,6 +154,7 @@ button .btn .btn-default {
 
 #featured-logos img {
     height: 11vh; /*11vh on Chrome, 9vh on Brave U_U*/
+    max-width: 100%;
 }
 
 #frst-slide {
@@ -155,12 +163,18 @@ button .btn .btn-default {
     padding-top: 40px;
     display: flex;
     flex-direction: column;  
+    max-width: 1477px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 #for-whitespace {
     display: flex;
     flex-direction: column;
     padding: 0 5%;
+    max-width: 1477px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 iframe {
@@ -178,7 +192,6 @@ iframe {
     }
 }
 
-
 #easyNfun {
     font-family: 'Permanent Marker', cursive;
     /*margin: 1rem 0 !important;*/
@@ -188,13 +201,11 @@ iframe {
     margin-bottom: 1rem;
 }
 
-
-
 #long-text {
     /*margin: 0 100px;*/
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
     
 #byline-container {
@@ -206,16 +217,26 @@ iframe {
 }
 
 #byline-p {
-    margin: 0 0 5px 10px;
+    /*margin: 0 0 5px 10px;*/
     opacity: .4;
+    font-size: .85rem;
+    margin: 0 0 3px 8px;
 }
 
 #adrianus {
     border-radius: 50%;
-    margin-left: 20px;
+    /*margin-left: 20px;
     width: 90px;
-    height: 90px;
+    height: 90px;*/
+    margin-left: 6px;
+    width: 60px;
+    height: 60px;
     display: inline-block;
+}
+
+@media(min-width: 430px) {
+    #byline-container #adrianus { margin-left: 10px; width: 80px; height: 80px; }
+    #byline-container #byline-p { font-size: 1rem; margin: 0 0 5px 10px; }
 }
 
 #last-btn {
@@ -260,12 +281,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 footer p {
     color: black;
     opacity: .4;
-    font-size: .9rem;
+    font-size: .8rem;
     text-align: center;
     justify-self: center;
     margin: 0;
