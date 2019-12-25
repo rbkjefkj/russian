@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <div class="container-fluid" style="padding: 0;">
-<body>
+<body >
+    <div id="loader" class="loader">Loading...</div>
     <section id="frst-slide">
         <h1 class="text-ceter" id="RuLearning"><span style="white-space: nowrap; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">ARE YOU</span> <span style="color: #0000FF;">LEARNING</span> <span style="color: red";>RUSSIAN?</h1>
         <div id="yellow-bg">
@@ -78,10 +79,22 @@ And that's just the beginning!<br><br>
 window.onresize = function(event) {
     getText(event);    
 };
+
+window.onload = function(event) {
+    getText(event);
+    renderContent();
+};
+
+function renderContent() {
+    console.log('wooooooo');
+    document.getElementsByClassName('loader')[0].style.display = 'none';
+    document.getElementById('frst-slide').style.display = 'flex';
+    document.getElementById('for-whitespace').style.display = 'flex';
+}
+
 function getText() {
     let w = window.innerWidth;
     w > 800 ? document.getElementById('frst-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN IN 365 DAYS' : document.getElementById('frst-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN';
-    //w > 500 ? document.getElementById('last-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN IN 365 DAYS' : document.getElementById('last-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN';
 }
 </script>
 </body>
