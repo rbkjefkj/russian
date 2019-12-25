@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Adine';
-    src: url('./adine.ttf') format('truetype');
+    src: url('../russian/adine.ttf') format('truetype');
 }
 
 @font-face {
