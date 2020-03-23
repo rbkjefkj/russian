@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <link href="./normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Stalinist+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./russian.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<div class="container-fluid" style="padding: 0;">
+<div class="zeropadding container-fluid" style="padding: 0;">
 <body >
     <div id="loader" class="loader">Loading...</div>
     <section id="frst-slide">
-        <h1 class="text-ceter" id="RuLearning"><span style="white-space: nowrap; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">ARE YOU</span> <span style="color: #0000FF;">LEARNING</span> <span style="color: red";>RUSSIAN?</h1>
+        <h1 class="text-ceter" id="RuLearning">
+            <span id="areU">ARE YOU</span>
+            <span id="learning">LEARNING</span>
+            <span id="russian">RUSSIAN?</span>
+        </h1>
         <div id="yellow-bg">
             <div id="three-btns" class="row justify-content-center" style="margin: 0;">
-                <button id="frst-btn" class="btn btn-default btn-bloc buttons">GET MY FREE GUIDE TO LEARNING RUSSIAN IN 365 DAYS</button>
+                <button id="frst-btn" class="btn btn-default btn-bloc buttons"></button>
                 <button id="scnd-btn" class="btn btn-default btn-bloc buttons">FREE RUSSIAN LESSONS</button>      
                 <button id="thrd-btn" class="btn btn-bloc buttons">FREE RUSSIAN SHORT STORIES</button>
             </div>
@@ -42,9 +43,9 @@
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NkQN3bCW67M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <h2 id="easyNfun" class="row justify-content-center">"I believe that learning Russian should be easy and fun!"</h2>
+        <h2 id="easyNfun" class="row justify-content-center" style="margin: 0;">"I believe that learning Russian should be easy and fun!"</h2>
         <div class="row justify-content-center" style="margin: 0;">
-            <div class="col-sm-10 col-md-9 col-lg-7" style="padding: 0;">    
+            <div class="zeropadding col-sm-10 col-md-9 col-lg-7" style="padding: 0;">    
                 <div class="row" id="byline-container" style="margin: 0;">
                     <img id="adrianus" src="https://i0.wp.com/learntherussianlanguage.com/wp-content/uploads/2019/11/arie.jpg?w=621&ssl=1">
                     <p id="byline-p"><em>Adrianus,<br>the author of this site</em></p>
@@ -65,10 +66,10 @@ And that's just the beginning!<br><br>
         </div>
     
         <div id="last-btn-container" class="row justify-content-center" style="margin: 0;">
-            <button id="last-btn" class="btn btn-default btn-bloc">Get my free guide to <br id="br" style="display: none;">learning Russian!</button>
+            <button id="last-btn" class="btn btn-default btn-bloc">GET MY FREE GUIDE TO <br id="br" style="display: none;">LEARNING RUSSIAN</button>
         </div>
         <footer>
-            <p id="copyright">Copyright 2019 by Learn The Russian Language</p>
+            <p>Copyright 2019 by Learn The Russian Language</p>
         </footer>
     </div>
     
@@ -86,15 +87,16 @@ window.onload = function(event) {
 };
 
 function renderContent() {
-    console.log('wooooooo');
     document.getElementsByClassName('loader')[0].style.display = 'none';
     document.getElementById('frst-slide').style.display = 'flex';
     document.getElementById('for-whitespace').style.display = 'flex';
 }
 
+/*function below gets the wrong width when browser simulates other screens, and the wrong text gets passed until 709px width*/
 function getText() {
     let w = window.innerWidth;
-    w > 800 ? document.getElementById('frst-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN IN 365 DAYS' : document.getElementById('frst-btn').innerHTML = 'GET MY FREE GUIDE TO LEARNING RUSSIAN';
+    console.log(w);
+    w > 800 ? document.getElementById('frst-btn').textContent = 'GET MY FREE GUIDE TO LEARNING RUSSIAN IN 365 DAYS' : document.getElementById('frst-btn').textContent = 'GET MY FREE GUIDE TO LEARNING RUSSIAN';
 }
 </script>
 </body>
