@@ -196,10 +196,10 @@ button .btn .btn-default {
 
 #featured-logos #wide-visible {
     opacity: .5;
-    font-size: .75rem;
+    font-size: 2.75rem;
     align-self: flex-end;
-    padding-bottom: 20px;
     display: block;
+    font-family: 'Adine';
 }
 
 #narrow-visible {
