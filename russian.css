@@ -35,14 +35,14 @@ html { font-size: 100%; } /*which browsers don't have this as 16px by default?*/
         line-height: .7;
     }
     iframe { width: 500px; height: 281.25px; }
-    /*#last-btn-container #last-btn { padding: 20px; font-size: 1.2rem; }*/
-    footer #copyright { white-space: nowrap; font-size: .7rem; }
+    #last-btn-container #last-btn { padding: 20px; }
+    footer small { white-space: nowrap; font-size: .7rem; }
 }
 
 /*on mobile size, uncheck section height and make logo images be max-width: 100%;*/
 
 /*RED SPINNNING LOADING TRINKET*/
-.loader,
+/*.loader,
 .loader:before,
 .loader:after {
   border-radius: 50%;
@@ -108,7 +108,7 @@ html { font-size: 100%; } /*which browsers don't have this as 16px by default?*/
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+}*/
 /*RED SPINNING LOADING TRINKET OVER*/
 
 #frst-slide {
@@ -117,7 +117,7 @@ html { font-size: 100%; } /*which browsers don't have this as 16px by default?*/
     padding-top: 40px;
     display: none;
     flex-direction: column;
-    max-width: 1477px;
+    max-width: 1577px;
     margin: 0 auto;
     background-color: white;
 }
@@ -168,10 +168,9 @@ button .btn .btn-default {
     white-space: nowrap;
     padding: 20px 30px;
     font-size: 1.4rem;
-    color: #E30909;
+    color: red;
     background-color: gold;
     font-family: 'Montserrat', sans-serif;
-    font-style: italic;
     z-index: 2;
 }
 
@@ -184,7 +183,6 @@ button .btn .btn-default {
     color: white;
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
-    font-style: italic;
     background-color: orange;
     z-index: 2;
 }
@@ -259,7 +257,6 @@ iframe {
 
 #easyNfun {
     font-family: 'Montserrat', sans-serif;
-    font-style: italic;
     font-size: 1.3rem;
     padding-top: 0;
     text-align: center;
@@ -290,20 +287,23 @@ iframe {
     opacity: .4;
     font-size: .85rem;
     margin: 0 0 3px 8px;
+    font-family: Helvetica;
 }
 
 #long-text {
     /*margin: 0 100px;*/
     text-align: left;
-    font-family: 'Roboto', sans-serif;
+    font-family: Helvetica;
     font-size: 1rem;
 }
+
+#long-text a { text-decoration: underline; }
 
 @media(max-width: 1150px) { .col-sm-10 #long-text { font-size: 1rem; } }
     
 @media(min-width: 430px) {
     #byline-container #adrianus { margin-left: 10px; width: 80px; height: 80px; }
-    #byline-container #byline-p { font-size: 1rem; margin: 0 0 5px 10px; }
+    #byline-container #byline-p { font-size: .95rem; margin: 0 0 5px 10px; }
 }
 
 #last-btn-container { margin: 0; }
@@ -314,7 +314,6 @@ iframe {
     padding: 20px 30px;
     font-size: 1.7rem;
     font-family: 'Montserrat', sans-serif;
-    font-style: italic;
     position: relative;
     z-index: 1;
     /*margin: 2.2rem 0 2.7rem 0;*/
@@ -323,17 +322,15 @@ iframe {
     white-space: nowrap;
 }
 
-/*#br { display: none; }*/
-
 #last-btn:hover { background-color: #1A5EFF!important; color: white !important; }
 @media(max-width: 460px) {
-    #last-btn #br { display: block !important; }
     #last-btn-container #last-btn {
         padding: 15px;
-        font-size: 1rem !important;      
+        font-size: .9rem !important;      
         width: 90%;  
         margin-top: 4%;
     }
+    #small { font-size: .65rem; }
 }
 
 @media (min-width: 461px) and (max-width: 1199px) { #last-btn-container #last-btn { font-size: 1rem; margin-top: 4%; }}
@@ -351,22 +348,31 @@ iframe {
 
 footer {
     line-height: 80px;
-    display: flex;
+    display: flex !important; /*wo !important, Bootstrap somehow overrides this w block*/
     flex-direction: column;
     align-items: center;
     background-color: white;
 }
 
-footer p {
-    color: black;
+footer small {
     opacity: .4;
     font-size: .8rem;
     text-align: center;
     justify-self: center;
     margin: 0;
     white-space: nowrap;
+    font-family: Helvetica;
 }
 
-/*I tried changing the following inline styles into CSS class rules below but that didn't work so I left the inline styles in HTML*/
-/*.zeropadding { padding: 0; }
-.row { margin: 0; }*/
+/*I tried changing the following inline styles into CSS class rules below but that didn't work so I left the inline styles in HTML
+.zeropadding { padding: 0; }
+.row { margin: 0; }
+*/
+
+/*  Use .js-* classes to denote behavior (as opposed to style), but keep these classes out of your CSS.
+    Keep classes lowercase and use dashes (-) (not underscores or camelCase) for separating words. 
+    Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document else they might get overlooked
+    Lowercase all hex values, e.g., #fff. Use shorthand hex values where available, e.g., #fff instead of #ffffff.
+    Don't use @import, it's slow.
+    Use classes over generic element tag for optimum rendering performance.
+*/
