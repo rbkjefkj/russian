@@ -184,7 +184,7 @@ button .btn .btn-default {
 @media(max-width: 600px) {
     #three-btns .buttons {
         font-size: 3.85vw !important;
-        padding: 10px 15px;
+        padding: 10px 10px;
     }   
 }
 
