@@ -180,12 +180,16 @@ button .btn .btn-default {
 @media(max-width: 800px) {
     #three-btns .buttons { padding: 15px 20px; }
 }
-/*why does onload the 15px don't fit, but when downsized from a bigger screen width, they do fit???*/
+
 @media(max-width: 600px) {
     #three-btns .buttons {
         font-size: 3.85vw !important;
-        padding: 10px 10px;
+        padding: 10px 12px;
     }   
+}
+
+@media(max-width: 550px) {
+    #yellow-bg #three-btns .buttons { padding: 10px 10px; }
 }
 
 #scnd-btn, #thrd-btn {
@@ -238,6 +242,10 @@ button .btn .btn-default {
     height: 6vh;
     padding-left: 15px;
     max-height: 42px;
+}
+
+@media(max-width: 347px) {
+    #fluentu { margin-top: 10px; }
 }
 
 #transparent {
@@ -429,6 +437,7 @@ button .btn .btn-default {
 
 #last-btn:hover { background-color: #1A5EFF!important; color: white !important; }
 @media(max-width: 460px) {
+    #last-btn #br { display: block !important; }
     #last-btn-container #last-btn {
         padding: 15px;
         font-size: .9rem !important;      

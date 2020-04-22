@@ -74,7 +74,7 @@ And that's just the beginning!<br><br>
         <!--</article>-->
     
         <div id="last-btn-container" class="row justify-content-center" style="margin: 0;">
-            <button id="last-btn" class="btn btn-default btn-bloc" type="button">GET MY FREE GUIDE TO <wbr>LEARNING RUSSIAN</button>
+            <button id="last-btn" class="btn btn-default btn-bloc" type="button">GET MY FREE GUIDE TO <br id="br" style="display: none;">LEARNING RUSSIAN</button>
         </div>
         <footer>
             <small id="small">Copyright 2019 by Learn The Russian Language</small>
@@ -106,8 +106,8 @@ function getText() {
     w > 800 ? document.getElementById('frst-btn').textContent = 'GET MY FREE GUIDE TO LEARNING RUSSIAN IN 365 DAYS' : document.getElementById('frst-btn').textContent = 'GET MY FREE GUIDE TO LEARNING RUSSIAN';
 }
 </script>
-<!--optimized YT embed-->
-<script> (function() { var v = document.getElementsByClassName("youtube-player"); for (var n = 0; n < v.length; n++) { v[n].onclick = function () { var iframe = document.createElement("iframe"); iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/NkQN3bCW67M?autoplay=1" /*"//www.youtube.com/embed/" + this.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&rel="+ this.dataset.related +"&controls="+this.dataset.control+"&showinfo=" + this.dataset.info*/); iframe.setAttribute("frameborder", "0"); iframe.setAttribute("id", "youtube-iframe"); iframe.setAttribute("style", "width: 100%; height: 100%; position: absolute; top: 0; left: 0;"); if (this.dataset.fullscreen == 1){ iframe.setAttribute("allowfullscreen", ""); } while (this.firstChild) { this.removeChild(this.firstChild); } this.appendChild(iframe); }; } })(); </script>  
+<!--optimized YT embed. Muted to start autoplaying with one button click at least on some browsers-->
+<script> (function() { var v = document.getElementsByClassName("youtube-player"); for (var n = 0; n < v.length; n++) { v[n].onclick = function () { var iframe = document.createElement("iframe"); iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/NkQN3bCW67M?autoplay=1&mute=1" /*"//www.youtube.com/embed/" + this.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&rel="+ this.dataset.related +"&controls="+this.dataset.control+"&showinfo=" + this.dataset.info*/); iframe.setAttribute("allow", "autoplay"); iframe.setAttribute("frameborder", "0"); iframe.setAttribute("id", "youtube-iframe"); iframe.setAttribute("style", "width: 100%; height: 100%; position: absolute; top: 0; left: 0;"); if (this.dataset.fullscreen == 1){ iframe.setAttribute("allowfullscreen", ""); } while (this.firstChild) { this.removeChild(this.firstChild); } this.appendChild(iframe); }; } })(); </script>  
 </body>
 </div>
 </html>
